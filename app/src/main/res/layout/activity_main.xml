@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/idemail"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="128dp"
+        android:background="@drawable/round_corners"
+        android:hint="  Email"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idpassword"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/round_corners"
+        android:hint="  Password"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idemail" />
+
+    <CheckBox
+        android:id="@+id/idcheck"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="153dp"
+        android:text="Remember Me"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idpassword" />
+
+    <Button
+        android:id="@+id/idlogin"
+        android:layout_width="270dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="163dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="35sp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idcheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
